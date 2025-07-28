@@ -1,0 +1,14 @@
+{
+    "editor.fontSize": 16,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    },
+    "eslint.validate": [
+      "javascript"
+    ],
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.tabSize": 2,
+    "terminal.integrated.fontSize": 16
+  }
