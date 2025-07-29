@@ -1,12 +1,13 @@
-import { Menubar } from 'primereact/menubar'
+import { MegaMenu } from 'primereact/megamenu'
+
 import items from './itemsMenu'
 
 const Menu = () => {
   
   return (
-    <>
-      <Menubar model={items}/>
-    </>
+    <div className="card">
+      <MegaMenu model={items}  breakpoint="960px" />
+    </div>
   )
 }
 

@@ -7,18 +7,12 @@ const items = [
     label: 'Departamentos',
     icon: 'pi pi-building',
     items: [
-      {
-        label: 'Listagem',
-        icon: 'pi pi-table'
-      },
-      {
-        label: 'Cadastro',
-        icon: 'pi pi-file-plus'
-      },
-      {
-        label: 'UI Kit',
-        icon: 'pi pi-pencil'
-      },
+      [
+        {
+          label: 'Ações',
+          items: [{ label: 'Listar', icon: 'pi pi-table' }, { label: 'Cadastrar', icon: 'pi pi-file-plus' }]
+        }
+      ],
     ]
   }
 ]
