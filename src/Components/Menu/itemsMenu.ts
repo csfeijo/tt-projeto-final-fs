@@ -4,44 +4,22 @@ const items = [
     icon: 'pi pi-home'
   },
   {
-    label: 'Features',
-    icon: 'pi pi-star'
-  },
-  {
-    label: 'Projects',
-    icon: 'pi pi-search',
+    label: 'Departamentos',
+    icon: 'pi pi-building',
     items: [
       {
-        label: 'Components',
-        icon: 'pi pi-bolt'
+        label: 'Listagem',
+        icon: 'pi pi-table'
       },
       {
-        label: 'Blocks',
-        icon: 'pi pi-server'
+        label: 'Cadastro',
+        icon: 'pi pi-file-plus'
       },
       {
         label: 'UI Kit',
         icon: 'pi pi-pencil'
       },
-      {
-        label: 'Templates',
-        icon: 'pi pi-palette',
-        items: [
-          {
-            label: 'Apollo',
-            icon: 'pi pi-palette'
-          },
-          {
-            label: 'Ultima',
-            icon: 'pi pi-palette'
-          }
-        ]
-      }
     ]
-  },
-  {
-    label: 'Contact',
-    icon: 'pi pi-envelope'
   }
 ]
 export default items

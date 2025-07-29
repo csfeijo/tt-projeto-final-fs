@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Menu/>
-      <div className=''>
+      <div className="container mx-auto max-w-7xl px-4">
         <Routes>
           <Route index element={<Home />} />
           <Route path="departamentos">
