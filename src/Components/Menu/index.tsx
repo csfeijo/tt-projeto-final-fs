@@ -1,12 +1,13 @@
+import { useNavigate } from 'react-router'
 import { MegaMenu } from 'primereact/megamenu'
-
-import items from './itemsMenu'
+import menuItems from './menuItems'
 
 const Menu = () => {
-  
+  const navigate = useNavigate()
+
   return (
     <div className="card">
-      <MegaMenu model={items}  breakpoint="960px" />
+      <MegaMenu model={menuItems(navigate)}  breakpoint="960px" />
     </div>
   )
 }

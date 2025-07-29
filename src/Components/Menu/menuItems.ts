@@ -1,0 +1,41 @@
+const menuItems = (navigate) => {
+  return [
+    {
+      label: 'Home',
+      icon: 'pi pi-home',
+      command: () => {
+        navigate('/')
+      }
+    },
+    {
+      label: 'Departamentos',
+      icon: 'pi pi-building',
+      items: [
+        [
+          {
+            label: 'Ações',
+            items: [
+              { 
+                label: 'Listar', 
+                icon: 'pi pi-table',
+                command: () => {
+                  navigate('/departamentos')
+                }
+              },
+              { 
+                label: 'Cadastrar', 
+                icon: 'pi pi-file-plus',
+                command: () => {
+                  navigate('/departamentos/new')
+                }
+              }
+            ]
+          }
+        ],
+      ]
+    }
+  ]
+}
+
+  
+export default menuItems
