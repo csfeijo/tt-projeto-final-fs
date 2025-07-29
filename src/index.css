@@ -1,14 +1,9 @@
-@layer tailwind-base, primereact, tailwind-utilities;
+@layer tailwind-base, primereact;
 
-/* Importa o "preflight" (antigo @tailwind base) */
+/* Tailwind completo (base, utilities e componentes já incluídos) */
 @layer tailwind-base {
-  @import "tailwindcss/preflight";
+  @import 'tailwindcss';
 }
 
-/* Importa o theme do PrimeReact com layer nomeado */
-@import "primereact/resources/themes/soho-dark/theme.css" layer(primereact);
-
-/* Importa os utilitários (não há mais separation de components) */
-@layer tailwind-utilities {
-  @import "tailwindcss/utilities";
-}
+/* PrimeReact theme dentro do layer isolado */
+@import 'primereact/resources/themes/soho-dark/theme.css' layer(primereact);

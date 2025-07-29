@@ -1,7 +1,11 @@
+import { Menubar } from 'primereact/menubar'
+import items from './itemsMenu'
+
 const Menu = () => {
+  
   return (
     <>
-    Menu
+      <Menubar model={items}/>
     </>
   )
 }
