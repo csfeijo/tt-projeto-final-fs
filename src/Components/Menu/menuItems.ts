@@ -1,4 +1,6 @@
-const menuItems = (navigate) => {
+import type { NavigateFunction } from 'react-router'
+
+const menuItems = (navigate: NavigateFunction) => {
   return [
     {
       label: 'Home',
