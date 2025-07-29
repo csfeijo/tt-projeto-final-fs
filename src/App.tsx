@@ -1,13 +1,20 @@
-import { Button } from 'primereact/button';                             
+import { BrowserRouter, Routes, Route } from "react-router";
+import Home from "./Pages/Home";
+import ListaDepartamentos from "./Pages/Departamentos/ListaDepartamentos";
+import FormDepartamentos from "./Pages/Departamentos/FormDepartamentos";
 
 const App = () => {
   return (
-    <>
-      <h1>Projeto Final em React</h1>
-      <h2>Consumindo uma API REST</h2>
-      <Button label='texte' severity='success'/>
-      <hr/>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="departamentos">
+        <Route index element={<ListaDepartamentos />} />
+        <Route path="new" element={<FormDepartamentos />} />
+      </Route>
+      <Route path="*" element={<h1>Not Found</h1>} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
