@@ -1,14 +1,23 @@
 {
-    "editor.fontSize": 16,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-    },
-    "eslint.validate": [
-      "javascript"
-    ],
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "explorer.compactFolders": false,
-    "editor.tabSize": 2,
-    "terminal.integrated.fontSize": 16
-  }
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 16,
+  "explorer.compactFolders": false,
+
+  // ✅ ESLint + Auto Fix on Save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Usa o ESLint como formatador padrão
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true
+}
