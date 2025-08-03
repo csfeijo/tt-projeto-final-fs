@@ -12,7 +12,7 @@ const Header = ({ titulo, botaoUrl, icon, botaoTitulo }: Header) => {
   const navigate = useNavigate()
 
   return (
-    <div className="flex justify-between items-center pb-4">
+    <div className="flex justify-between items-center py-4">
       <h1 className="text-2xl">{titulo}</h1>
       <Button 
         severity='secondary' 

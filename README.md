@@ -37,3 +37,10 @@ https://reactrouter.com/start/declarative/routing
  - Novo
  - Ajuste da rota de exclusão com parameter
  - Refatoração do header de seção
+
+# Ação de exclusão
+
+- Criando os métodos para exclusão
+- Adicionando o handler no botão de excluir
+- Recarregando a tela após a exclusão
+- Tratando as excessoes
