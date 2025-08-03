@@ -14,6 +14,7 @@ const App = () => {
           <Route path="departamentos">
             <Route index element={<ListaDepartamentos />} />
             <Route path="new" element={<FormDepartamentos />} />
+            <Route path="edit/:id_departamento" element={<FormDepartamentos />} />
           </Route>
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>

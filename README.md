@@ -29,3 +29,11 @@ https://reactrouter.com/start/declarative/routing
 - Instalando as dependencias e configurando o axios
 - Criando diretórios
 - Substituindo os dados mocados por dados reais na Listagem
+
+# Adicionando botões de ação
+
+ - Editar
+ - Excluir
+ - Novo
+ - Ajuste da rota de exclusão com parameter
+ - Refatoração do header de seção
