@@ -24,3 +24,8 @@ https://reactrouter.com/start/declarative/routing
 
 - Mock com DataTable
 - Mostrar a paginação
+
+# Camada de API
+- Instalando as dependencias e configurando o axios
+- Criando diretórios
+- Substituindo os dados mocados por dados reais na Listagem

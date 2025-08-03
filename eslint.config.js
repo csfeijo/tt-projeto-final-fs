@@ -27,7 +27,8 @@ export default tseslint.config([
     rules: {
       quotes: ['error', 'single', { avoidEscape: true }],
       semi: ['error', 'never'],
-      indent: ['error', 2]
+      indent: ['error', 2],
+      'eol-last': ['error', 'always']
     }
   }
 ])
