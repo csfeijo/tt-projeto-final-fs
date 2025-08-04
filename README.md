@@ -44,3 +44,9 @@ https://reactrouter.com/start/declarative/routing
 - Adicionando o handler no botão de excluir
 - Recarregando a tela após a exclusão
 - Tratando as excessoes
+
+# Ação de inserção
+
+- Montando a UI
+- Validando o campos (ficou faltando terminar a funcao )
+
