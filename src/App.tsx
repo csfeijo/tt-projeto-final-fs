@@ -1,3 +1,7 @@
+import { Button } from "primereact/button"
+import { Badge } from 'primereact/badge';
+
+
 function App() {
   return (
     <div className="p-10 bg-cyan-950 text-white">
@@ -19,6 +23,10 @@ function App() {
       ">
         ENVIAR
       </button>
+      
+      <Button icon="pi pi-bell" rounded text raised>
+        <Badge value={10} severity={"success"} size={"normal"}/>
+      </Button>
     </div>
   )
 }
