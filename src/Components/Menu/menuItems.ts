@@ -1,10 +1,13 @@
-const menuItems = () => {
+import type { NavigateFunction } from "react-router"
+
+const menuItems = (navigate: NavigateFunction) => {
+
   return [
     {
       label: 'Home',
       icon: 'pi pi-home',
       command: () => {
-        alert('clicou')
+        navigate('/')
       }
     },
     {
@@ -18,14 +21,14 @@ const menuItems = () => {
               label: 'Listar',
               icon: 'pi pi-table',
               command: () => {
-                alert('clicou')
+                navigate('/departamentos')
               }
             },
             {
               label: 'Cadastrar',
               icon: 'pi pi-file-plus',
               command: () => {
-                alert('clicou')
+                navigate('/departamentos/new')
               }
             },
 

@@ -23,3 +23,10 @@
 - [Chakra UI](https://chakra-ui.com/)
 - [Flowbyte React](https://flowbite-react.com/)
 - [Preline](https://preline.co/)
+
+# Capítulo 4 (Roteamento)
+
+[x] Instalando a dependência
+[x] Definindo as rotas
+[x] Criando as Pages Básicas
+[x] Configurando o Menu para direcionar os links
