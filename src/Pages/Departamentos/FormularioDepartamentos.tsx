@@ -1,8 +1,10 @@
+import Header from "../../Components/Header"
+
 const FormularioDepartamentos = () => {
 
   return (
     <>
-      <h1>Cadastro de Departamentos</h1>
+      <Header botaoIcone="pi-chevron-left" botaoUrl="/departamentos" titulo="Cadastro de Departamento" />
     </>
   )
 }
