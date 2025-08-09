@@ -30,3 +30,10 @@
 [x] Definindo as rotas
 [x] Criando as Pages Básicas
 [x] Configurando o Menu para direcionar os links
+
+# Capítulos 5 (Listagem de Departamentos)
+
+[x] UI da Listagem com dados mocados + Paginacao
+[x] Camada de request API com Axios
+[x] Adicionando botões de Ação na Listagem
+[x] Refatorando o Header das seções
