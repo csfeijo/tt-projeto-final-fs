@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './Pages/Home'
-import ListaDepartamentos from './Pages/Departamentos/ListaDepartamentos'
+import ListagemDepartamentos from './Pages/Departamentos/ListagemDepartamentos'
 import FormDepartamentos from './Pages/Departamentos/FormDepartamentos'
 import Menu from './Components/Menu'
 
@@ -12,7 +12,7 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="departamentos">
-            <Route index element={<ListaDepartamentos />} />
+            <Route index element={<ListagemDepartamentos />} />
             <Route path="new" element={<FormDepartamentos />} />
             <Route path="edit/:id_departamento" element={<FormDepartamentos />} />
           </Route>

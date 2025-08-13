@@ -8,17 +8,12 @@ import { Button } from 'primereact/button'
 import Header from '../../Components/Header'
 import listaDepartamentos from '../../Services/Departamentos/listaDepartamentos'
 import excluiDepartamento from '../../Services/Departamentos/excluiDepartamento'
-
-type Departamento = {
-  id_departamento: number,
-  nome: string,
-  sigla: string
-}
+import type { DepartamentoType } from '../../Types/types'
 
 const ListaDepartamentos = () => {
   const navigate = useNavigate()
 
-  const [departamentos, setDepartamentos] = useState<Departamento[]>([])
+  const [departamentos, setDepartamentos] = useState<DepartamentoType[]>([])
   const [loaded, setLoaded] = useState(false)
   const [error, setError] = useState('')
 
@@ -47,7 +42,7 @@ const ListaDepartamentos = () => {
   }, [loaded])
 
   // Template dos botões de ação
-  const templateAcoes = (departamento: Departamento) => {
+  const templateAcoes = (departamento: DepartamentoType) => {
     
     return (
       <div className='flex justify-between'>

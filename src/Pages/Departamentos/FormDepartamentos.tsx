@@ -1,10 +1,13 @@
 import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router'
 import Header from '../../Components/Header'
 import { InputText } from 'primereact/inputtext'
 import { Button } from 'primereact/button'
 import { Message } from 'primereact/message'
+import insereDepartamento from '../../Services/Departamentos/insereDepartamento'
 
 const FormDepartamentos = () => {
+  const navigate = useNavigate()
   const [nome, setNome] = useState('')
   const [sigla, setSigla] = useState('')
   const [erroForm, setErroForm] = useState('')
@@ -29,6 +32,20 @@ const FormDepartamentos = () => {
       return false
     }
     return true
+  }
+
+  const cadastraDepartamento = async () => {
+    try{
+      await insereDepartamento({
+        nome,
+        sigla
+      })
+
+      navigate('/departamentos')
+    } catch (e) {
+      console.log(e)
+      setErroForm('Erro na criação do Departamento')
+    }
   }
 
   return (
@@ -70,9 +87,9 @@ const FormDepartamentos = () => {
             severity='warning' 
             label='Salvar'
             icon="pi pi-save"
-            onClick={() => {
+            onClick={async () => {
               if (validaFormulario()) {
-                alert('Foi')
+                cadastraDepartamento()
               }
             }}
           />
