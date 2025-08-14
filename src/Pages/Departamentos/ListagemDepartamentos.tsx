@@ -6,15 +6,9 @@ import { Button } from 'primereact/button';
 import { Message } from 'primereact/message';
 import Header from "../../Components/Header";
 import listaDepartamentos from '../../Services/Departamentos/listaDepartamentos';
+import type { Departamento } from '../../Types/types';
 
 const ListagemDepartamentos = () => {
-
-  interface Departamento  {
-    id_departamento: number,
-    sigla: string,
-    nome: string
-  }
-
   // Uso de HOOKS
   const navigate = useNavigate()
   const [departamentos, setDepartamentos] = useState<Departamento[]>([])

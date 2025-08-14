@@ -31,9 +31,14 @@
 [x] Criando as Pages Básicas
 [x] Configurando o Menu para direcionar os links
 
-# Capítulos 5 (Listagem de Departamentos)
+# Capítulo 5 (Listagem de Departamentos)
 
 [x] UI da Listagem com dados mocados + Paginacao
 [x] Adicionando botões de Ação na Listagem
 [x] Refatorando o Header das seções
 [x] Camada de request API com Axios
+
+# Capítulo 6 (Inserção de Departamentos)
+
+[X] UI do formulário e validação
+[X] Criando métodos para Inserção e chamando a API
