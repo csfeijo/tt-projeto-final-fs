@@ -42,3 +42,7 @@
 
 [X] UI do formulário e validação
 [X] Criando métodos para Inserção e chamando a API
+
+# Capítulo 7 (Exclusão de Departamentos)
+
+[X] Criando métodos de exclusão e chamando na UI
