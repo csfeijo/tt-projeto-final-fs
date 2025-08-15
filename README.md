@@ -46,3 +46,8 @@
 # Capítulo 7 (Exclusão de Departamentos)
 
 [X] Criando métodos de exclusão e chamando na UI
+
+# Capítulo 8 (Edição de Departamentos)
+
+[X] Ajustes de reaproveitamento de UI
+[X] Criando métodos para Edição e chamando a API
